@@ -5,7 +5,7 @@ while 1:
     # Poll keyboard
     if msvcrt.kbhit():
         key = msvcrt.getch()
-    if key == b'f':
-        ser.write(str.encode('C21FE'))
-    elif key == b's':
-        ser.write(str.encode('C21SE'))
+        if key == b'f':
+            ser.write(str.encode('C21FE'))
+        elif key == b's':
+            ser.write(str.encode('C21SE'))
